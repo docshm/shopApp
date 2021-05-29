@@ -32,7 +32,7 @@ router.post("/products", isLoggedIn, async (req, res) => {
 		res.redirect("/products");
 	} catch (e) {
 		console.log(e.message);
-		req.flash("error", "Cannot Create Product, Something is wrong");
+		req.flash("error", "Cannot Create Product, Something went wrong");
 		res.render("error");
 	}
 });
