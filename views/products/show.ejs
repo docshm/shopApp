@@ -6,24 +6,14 @@
 	<%- include("../partials/flash")%>
 
 	<div class="row">
-		<div class="col-md-6 col-sm-6 mt-3 mb-6">
-			<div
-				class="card"
-				style="
-					@media (max-width: 375px) {
-						.card {
-							width: 21rem;
-						}
-					}
-
-					@media (min-width: 375px) {
-						.card {
-							width: 27rem;
-						}
-					}
-				"
-			>
-				<img src="<%=product.img%>" class="card-img-top" alt="..." />
+		<div class="col-lg-6 mt-3 mb-5">
+			<div class="card">
+				<img
+					style="max-width: 40%"
+					src="<%=product.img%>"
+					class="card-img-top"
+					alt="..."
+				/>
 				<div class="card-body">
 					<h5 class="card-title"><%=product.name%></h5>
 					<h5 class="card-title">&#8377; <%=product.price%></h5>
